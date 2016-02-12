@@ -11,6 +11,10 @@ public class Country {
         this.countryAb = countryAb;
     }
 
+    public Country() {
+
+    }
+
     public String getCountryName() {
         return countryName;
     }

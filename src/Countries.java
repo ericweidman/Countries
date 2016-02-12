@@ -5,8 +5,10 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Countries {
+    //public static Country country = new Country();
     public static void main(String[] args) throws FileNotFoundException {
         HashMap<Character, ArrayList<String>> countryMap = new HashMap();
+
 
 
 
@@ -15,8 +17,12 @@ public class Countries {
         while(fileScanner.hasNext()){
             String line = fileScanner.nextLine();
             String[] columns = line.split("\\|");
-            Country country = new Country(columns [0], columns [01]);
-            char firstLetter = Country.
+            Country country = new Country(columns[0], columns[1]);
+            char firstLetter = country.countryName.charAt(0);
+            countryMap.put(firstLetter, new ArrayList<String>());
+
+
+
 
 
         }
