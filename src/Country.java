@@ -6,7 +6,7 @@ public class Country {
     String countryAb;
 
 
-    public Country(String countryName, String countryAb) {
+    public Country(String countryAb, String countryName) {
         this.countryName = countryName;
         this.countryAb = countryAb;
     }
