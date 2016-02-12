@@ -20,6 +20,7 @@ public class Countries {
             Country country = new Country(columns[0], columns[1]);
             char firstLetter = country.countryName.charAt(0);
             countryMap.put(firstLetter, new ArrayList<String>());
+            countryMap.get(firstLetter).add(country.countryName);
 
 
 
