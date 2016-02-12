@@ -1,11 +1,10 @@
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
-import java.util.concurrent.ExecutionException;
+
 
 public class Countries {
     public static void main(String[] args) throws Exception {
@@ -38,8 +37,8 @@ public class Countries {
             char firstLetter = userInput.charAt(0);
             String fileName = userInput + "_countries.txt";
             String fileContentToBeWritten = "";
-            ArrayList<Country> tempCountries = countryMap.get(firstLetter);
-            for (Country country: tempCountries){
+
+            for (Country country: countryMap.get(firstLetter)){
                 fileContentToBeWritten += country.countryName + " " + country.countryAb+ "\n";
             }
             writeFile(fileName, fileContentToBeWritten);
